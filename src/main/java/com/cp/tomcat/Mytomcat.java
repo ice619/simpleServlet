@@ -23,9 +23,6 @@ public class Mytomcat {
     public static final HashMap<String, Object> servlet = new HashMap<String, Object>();
 
     private void init(){
-        InputStream io = null;
-        String basePath;
-
         try {
             System.out.println("加载配置文件开始。。。");
             UtilsXml xml = new UtilsXml(UtilsXml.class.getResource("/") + "web.xml");
@@ -51,14 +48,6 @@ public class Mytomcat {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-        } finally {
-            if(io != null){
-                try {
-                    io.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
         }
 
     }

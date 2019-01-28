@@ -10,7 +10,7 @@
 
     <servlet-mapping>
         <servlet-name>myhtml.html</servlet-name>
-        <url-pattern>/myhtml.html</url-pattern>
+        <url-pattern>/firstServlet</url-pattern>
     </servlet-mapping>
 
 
@@ -22,7 +22,7 @@
 
     <servlet-mapping>
         <servlet-name>myhtml2.html</servlet-name>
-        <url-pattern>/myhtml2.html</url-pattern>
+        <url-pattern>/secondServlet</url-pattern>
     </servlet-mapping>
 
 
